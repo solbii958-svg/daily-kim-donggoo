@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8fbff">
+<title>Daily 김동구</title>
+<style>
+:root{--ink:#1d2b40;--muted:#77869a;--blue:#8fb9e8;--pale:#edf5fd;--line:#e6ebf1;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f9fbfd;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}button,input{font:inherit}.shell{width:min(880px,calc(100% - 36px));margin:auto}
+header{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-size:14px;font-weight:800;letter-spacing:2px}.brand span{color:#7da7d6;font-weight:500}
+.header-link{font-size:12px;font-weight:700;color:#536b87;border:1px solid #dfe7f0;border-radius:999px;padding:9px 14px;background:#fff}
+.hero{text-align:center;padding:56px 0 38px}
+.avatar{width:112px;height:112px;margin:0 auto 20px;border-radius:50%;padding:4px;border:1px solid #dce8f6;background:#fff}
+.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;background:linear-gradient(135deg,#e1efff,#f8fbff)}
+.eyebrow{font-size:10px;letter-spacing:3px;font-weight:800;color:#86a6ca}
+h1{font-size:clamp(29px,5vw,42px);letter-spacing:-1.4px;margin:8px 0 7px;font-weight:750}
+.subtitle{font-size:13px;color:var(--muted);margin:0}
+.links{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:21px}
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 15px;border:1px solid #dfe7f0;border-radius:999px;background:#fff;color:#4e6683;font-size:12px;font-weight:700}
+.pill.primary{background:#eaf3fd;border-color:#eaf3fd;color:#355b87}
+.rule{height:1px;background:var(--line);margin:0}
+section{padding:29px 0}
+.section-heading{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:15px}
+h2{font-size:16px;margin:0;font-weight:800;letter-spacing:-.3px}.small{font-size:11px;color:var(--muted)}
+.search{width:100%;height:43px;border:1px solid #e0e7ef;border-radius:10px;background:#fff;padding:0 14px;outline:none;color:var(--ink);font-size:13px}
+.search:focus{border-color:#9bbce3;box-shadow:0 0 0 3px #eaf3fd}
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 17px}
+.filter{border:1px solid #e1e7ef;background:#fff;color:#6d7d91;border-radius:8px;padding:7px 11px;font-size:11px;cursor:pointer}
+.filter.active,.filter:hover{background:#eaf3fd;border-color:#eaf3fd;color:#345a86}
+.video-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.video{display:flex;gap:12px;align-items:center;min-width:0;padding:10px;background:#fff;border:1px solid var(--line);border-radius:12px;transition:border-color .2s}
+.video:hover{border-color:#b9d1ec}
+.thumb{flex:0 0 112px;aspect-ratio:16/10;border-radius:7px;background:linear-gradient(135deg,#e3effd,#f5f8fc);overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.video-info{min-width:0}.video-info h3{font-size:12px;line-height:1.45;margin:0 0 4px;font-weight:750}.video-info p{font-size:10px;color:var(--muted);margin:0}
+.video-info .tag{display:inline-block;font-size:9px;color:#6385ad;background:#f0f6fd;border-radius:4px;padding:2px 5px;margin-bottom:5px}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:9px;background:linear-gradient(135deg,#e3effd,#f5f8fc);border:1px solid var(--line)}
+footer{padding:24px 0 34px;text-align:center;color:#9aa6b5;font-size:10px;letter-spacing:.3px}
+.empty{display:none;color:var(--muted);font-size:12px;padding:20px;text-align:center;border:1px dashed var(--line);border-radius:10px}
+@media(max-width:600px){.shell{width:calc(100% - 28px)}header{height:66px}.brand{font-size:12px;letter-spacing:1.5px}.header-link{font-size:11px;padding:8px 11px}.hero{padding:40px 0 29px}.avatar{width:96px;height:96px}section{padding:24px 0}.video-list{grid-template-columns:1fr}.thumb{flex-basis:120px}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.section-heading{align-items:center}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header>
+  <a class="brand" href="#top">DAILY <span>KIM DONG GOO</span></a>
+  <!-- 실제 동구 유튜브 채널 주소로 바꿔 주세요 -->
+  <a class="header-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YOUTUBE ↗</a>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="avatar"><img src="images/donggoo.jpg" alt="동구 프로필 사진"></div>
+    <div class="eyebrow">A FAN PAGE FOR DONGGOO</div>
+    <h1>Daily 김동구</h1>
+    <p class="subtitle">동구의 좋은 순간들을 기록하는 작은 공간 ♡</p>
+    <div class="links">
+      <a class="pill primary" href="#videos">영상 모아보기 ↓</a>
+      <a class="pill" href="#gallery">사진 갤러리</a>
+      <a class="pill" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">공식 채널 ↗</a>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section id="videos">
+    <div class="section-heading">
+      <div><h2>VIDEO ARCHIVE</h2><div class="small">좋아하는 순간을 다시 보기</div></div>
+      <span class="small" id="count">3 VIDEOS</span>
+    </div>
+    <input class="search" id="search" type="search" placeholder="영상 제목 검색..." aria-label="영상 제목 검색">
+    <div class="filters" aria-label="영상 카테고리">
+      <button class="filter active" data-filter="all">ALL</button>
+      <button class="filter" data-filter="하이라이트">하이라이트</button>
+      <button class="filter" data-filter="웃긴 장면">웃긴 장면</button>
+      <button class="filter" data-filter="쇼츠">쇼츠</button>
+      <button class="filter" data-filter="춤">춤</button>
+    </div>
+    <div class="video-list" id="videoList">
+      <!-- VIDEO_ID_1 등을 실제 유튜브 영상 ID로 바꿔 주세요 -->
+      <a class="video" data-category="하이라이트" data-title="동구 레전드 하이라이트" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+        <div class="thumb"><img src="images/video1.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="video-info"><span class="tag">하이라이트</span><h3>동구 레전드 순간</h3><p>WATCH VIDEO ↗</p></div>
+      </a>
+      <a class="video" data-category="웃긴 장면" data-title="동구 웃긴 장면 모음" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+        <div class="thumb"><img src="images/video2.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="video-info"><span class="tag">웃긴 장면</span><h3>다시 봐도 웃긴 순간</h3><p>WATCH VIDEO ↗</p></div>
+      </a>
+      <a class="video" data-category="쇼츠" data-title="동구 쇼츠 모음" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+        <div class="thumb"><img src="images/video3.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="video-info"><span class="tag">쇼츠</span><h3>동구 쇼츠 모음</h3><p>WATCH VIDEO ↗</p></div>
+      </a>
+    </div>
+    <div class="empty" id="empty">검색 결과가 없어. 다른 단어로 검색해 봐!</div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section id="gallery">
+    <div class="section-heading">
+      <div><h2>PHOTO ARCHIVE</h2><div class="small">마음에 남은 장면들</div></div>
+      <span class="small">GALLERY</span>
+    </div>
+    <div class="gallery">
+      <img src="images/photo1.jpg" alt="동구 사진 1" loading="lazy">
+      <img src="images/photo2.jpg" alt="동구 사진 2" loading="lazy">
+      <img src="images/photo3.jpg" alt="동구 사진 3" loading="lazy">
+      <img src="images/photo4.jpg" alt="동구 사진 4" loading="lazy">
+    </div>
+  </section>
+</main>
+<footer>DAILY KIM DONG GOO · FAN-MADE PAGE</footer>
+</div>
+<script>
+const search = document.getElementById('search');
+const cards = [...document.querySelectorAll('.video')];
+const filters = [...document.querySelectorAll('.filter')];
+let activeFilter = 'all';
+function updateVideos(){
+  const query = search.value.trim().toLowerCase();
+  let shown = 0;
+  cards.forEach(card=>{
+    const matchesText = (card.dataset.title || '').toLowerCase().includes(query);
+    const matchesFilter = activeFilter === 'all' || card.dataset.category === activeFilter;
+    card.style.display = matchesText && matchesFilter ? 'flex' : 'none';
+    if(matchesText && matchesFilter) shown++;
+  });
+  document.getElementById('count').textContent = shown + ' VIDEOS';
+  document.getElementById('empty').style.display = shown ? 'none' : 'block';
+}
+search.addEventListener('input', updateVideos);
+filters.forEach(btn=>btn.addEventListener('click',()=>{
+  filters.forEach(item=>item.classList.remove('active'));
+  btn.classList.add('active'); activeFilter=btn.dataset.filter; updateVideos();
+}));
+</script>
+</body>
+</html>
